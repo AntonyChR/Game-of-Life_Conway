@@ -16,16 +16,18 @@ running          = True
 num_cells_side   = 50 
 side_cell        =int(side_screen / num_cells_side)
 
-#cell estates
-#cells_state       = np.zeros((num_cells_side,num_cells_side))
-cells_state      = np.random.randint(0, 2,(num_cells_side, num_cells_side))
-'''
+#---------------------------------------------------------------------------
+#cells_state      = np.random.randint(0, 2,(num_cells_side, num_cells_side))
+
+cells_state       = np.zeros((num_cells_side,num_cells_side))
+
 cells_state[10,10] = 1
 cells_state[11,11] = 1
 cells_state[10,12] = 1
 cells_state[11,11] = 1
 cells_state[11,12] = 1
-cells_state[12,11] = 1 '''
+cells_state[12,11] = 1 
+#---------------------------------------------------------------------------
 
 pg.init()
 screen = pg.display.set_mode(size)
